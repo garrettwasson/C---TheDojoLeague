@@ -1,0 +1,11 @@
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\bin\Debug\netcoreapp2.0\DojoLeague.deps.json
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\bin\Debug\netcoreapp2.0\DojoLeague.runtimeconfig.json
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\bin\Debug\netcoreapp2.0\DojoLeague.runtimeconfig.dev.json
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\bin\Debug\netcoreapp2.0\DojoLeague.dll
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\bin\Debug\netcoreapp2.0\DojoLeague.pdb
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\obj\Debug\netcoreapp2.0\DojoLeague.csprojResolveAssemblyReference.cache
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\obj\Debug\netcoreapp2.0\DojoLeague.csproj.CoreCompileInputs.cache
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\obj\Debug\netcoreapp2.0\DojoLeague.AssemblyInfoInputs.cache
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\obj\Debug\netcoreapp2.0\DojoLeague.AssemblyInfo.cs
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\obj\Debug\netcoreapp2.0\DojoLeague.dll
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\DojoLeague\obj\Debug\netcoreapp2.0\DojoLeague.pdb

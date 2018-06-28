@@ -1,0 +1,55 @@
+@model Ninja
+<div class="info_div">
+    <h1>Registered Ninjas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Ninja Name</th>
+                <th>Home Dojo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var ninja in ViewBag.allNinjas)
+            {
+                <tr>
+                    <td><a href="/ninjas/@ninja.ID">@ninja.NinjaName</a></td>
+                    @if(@ninja.dojos != null)
+                    {
+                        <td><a href="/dojos/@ninja.dojos.ID">@ninja.dojos.DojoName</a></td>
+                    }
+                    else
+                    {
+                        <td>Rogue</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div><div class="form_div">
+    <h1>Register a Ninja</h1>
+    <div asp-validation-summary="All"></div>
+    <form asp-action="AddNinja" asp-controller="Ninja" method="post">
+        <label style="display: block;" asp-for="NinjaName">Ninja Name</label>
+        <input asp-for="NinjaName">
+        <label style="display: block;" asp-for="NinjaLevel">Ninja Level (1-10)</label>
+        <select asp-for="NinjaLevel">
+            @for(int i =1; i < 11; i++)
+            {
+                <option>@i</option>
+            }
+        </select>
+        <label style="display: block;" asp-for="DojoID">Assigned Dojo?</label>
+        <select asp-for="DojoID">
+            <option value="">Rogue</option>
+            @foreach(var dojo in ViewBag.allDojos)
+            {
+                <option value="@dojo.ID">@dojo.DojoName</option>
+            }
+        </select>
+        <label style="display: block;" asp-for="NinjaDescription">Optional Description</label>
+        <textarea asp-for="NinjaDescription" cols="30" rows="10"></textarea>
+        <input style="display: block;" type="submit" value="Add">
+    </form>
+    <a style="display: block;" href="/dojos">Go to Dojos</a>
+    <a style="display: block;" href="/">Go Home</a>
+</div>

@@ -1,0 +1,19 @@
+@foreach(var ninja in ViewBag.ninja)
+{
+    <h1>Name: @ninja.NinjaName </h1>
+    <p>Ninja Level: @ninja.NinjaLevel </p>
+    @if(@ninja.NinjaDescription != null)
+    {
+        <p>Description: @ninja.NinjaDescription</p>
+    }
+    @if(@ninja.dojos == null)
+    {
+        <p>Current Dojo: Rogue </p>
+    }
+    else 
+    {
+        <p>Current Dojo: <a href="/dojos/@ninja.dojos.ID">@ninja.dojos.DojoName</a></p>
+    }
+    <a style="display: block;" href="/ninjas">Return to Ninjas</a>
+    <a style="display: block;" href="/">Go Home</a>
+}
